@@ -14,34 +14,36 @@ In the subfolder "test"
 
 * calculate DG values for the test sequence file 'test.fa' using single sequence information
 
-    $ ../myscanDG.pl test.fa > test.dgvalue.single.txt
+    `$ ../myscanDG.pl test.fa > test.dgvalue.single.txt`
 
 * calculate DG values for the test sequence file 'test.fa' based on multiple sequence alignment
+<pre>
   the blastpgp program should be located at /path/to/blast/bin/blastpgp
   /path/to/blastdb, e.g. /data/blastdb/nr
   /path/to/scampi-msa, is the scampi-msa from the modhmm package
+</pre>
 
-    $ ../myscanDG.pl -multi test.fa -ncbidir /path/to/blast -blastdb /path/to/blastdb -scampipath /path/to/scampi-msa  > 
+    `$ ../myscanDG.pl -multi test.fa -ncbidir /path/to/blast -blastdb /path/to/blastdb -scampipath /path/to/scampi-msa  > test.dgvalue.multi.txt`
 
 * calculate DG values from the prf file 
 
-    $ ../myscanDG.pl test.prf > test.dgvalue.by.multi.prf.txt
+    `$ ../myscanDG.pl test.prf > test.dgvalue.by.multi.prf.txt`
 
 ##Other scripts
 
 * analyze.pl    analyze the delta G values of given a peptide
 e.g.
 
-    $ ../analyze.pl  YIYLGGAILAEVIGTTLMKF -o rst_pep.html
+    `$ ../analyze.pl  YIYLGGAILAEVIGTTLMKF -o rst_pep.html`
 
 * calc_dG.pl    calculate the delta G values given a list of peptides
 e.g.
 
-    $ ../calc_dG.pl fragfile.txt -o rst_calc.html
+    `$ ../calc_dG.pl fragfile.txt -o rst_calc.html`
 
 * dG_predTM.pl  predict the most hydrophobic regions given a protein sequence
 e.g.
 
-    $ ../dG_predTM.pl test.fa -o rst_predTM.html
+    `$ ../dG_predTM.pl test.fa -o rst_predTM.html`
 
 

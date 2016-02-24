@@ -1,7 +1,8 @@
 #DGpred
 ##Description
-Calculate the hydrophobicity (deltaG values) of protein sequences or peptides
-The web-server for dgpred is accessible at http://dgpred.cbr.su.se
+Calculate the hydrophobicity (deltaG values) of protein sequences or peptides.
+
+The web-server for dgpred is accessible at http://dgpred.cbr.su.se.
 
 ##Usage
 The main script for calculating the hydrophobicity is `myscanDG.pl`
